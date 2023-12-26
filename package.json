@@ -6,13 +6,13 @@
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "dev:pdf-poppler": "npx ts-node src/pdf-poppler-index --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@img/sharp-darwin-arm64": "^0.33.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "pdf-poppler": "^0.2.1"
