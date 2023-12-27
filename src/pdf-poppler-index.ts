@@ -16,10 +16,10 @@ app.get("/", async (req: Request, res: Response) => {
 
   const opts = {
     format: 'jpg',
-    scale: 1600,
+    scale: 1920,
     out_dir: path.dirname(file),
-    out_prefix: path.basename(file, path.extname(file)),
-    page: null
+    out_prefix: path.basename(file, path.extname(file)) + '-pdf-poppler',
+    page: 12
   }
 
   try {
